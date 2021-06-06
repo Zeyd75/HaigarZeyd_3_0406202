@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: -25px;
+    width: 110%;
+    margin-left: -5px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h1 {
+    box-shadow: 0px 0px 7px #757575;
+    padding: 10px 0 10px 105px;
+  }
+
+  h1, h4 {
+    font-family: "Shrikhand", sans-serif;
+  }
+
+  .localisation {
+    display: flex;
+    background-color: #eaeaea;
+    height: 45px;
+    margin-top: -18px;
+    padding-left: 110px;
+  }
+
+  .localisation i {
+    margin-top: 16px;
+  }
+
+  .localisation p {
+    padding-left: 25px;
+  }
+}
