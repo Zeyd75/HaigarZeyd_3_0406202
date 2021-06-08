@@ -1,4 +1,6 @@
 @media only screen and (max-width: 600px) {
+
+  /* HEADER */
   body {
     margin-top: -25px;
     width: 110%;
@@ -18,7 +20,7 @@
   .localisation {
     display: flex;
     background-color: #eaeaea;
-    height: 45px;
+    height: 46px;
     margin-top: -18px;
     padding-left: 110px;
   }
@@ -30,4 +32,72 @@
   .localisation p {
     padding-left: 25px;
   }
+
+  .localisation i, .localisation p {
+    margin-top: 11px;
+  }
+}
+
+/* MAIN
+   RESA */
+.reserver {
+  background-color: #f6f6f6;
+  height: 290px;
+  margin-top: -25px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.reserver h2 {
+  padding-top: 35px;
+}
+
+.reserver p {
+  margin-top: -7px;
+}
+
+#explorer {
+  color: white;
+  margin-top: 37px;
+  width: 48%;
+  margin-left: 106px;
+  padding: 15px 0;
+  font-size: 15px;
+  border-radius: 25px;
+  box-sizing: 0 5px 5px #7575755e;
+  background: linear-gradient(#ff93e1, #a16be0);
+}
+
+/* FONCTIONNEMENT */
+.fonctionnement {
+  margin-left: 30px;
+  margin-top: 42px;
+}
+
+.etape {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.numeroEtape {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 5px;
+  padding: 10px;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+}
+
+.etape i {
+  color:#7e7e7e;
+}
+
+.decouvrir {
+  color: #7d7d7d;
 }
