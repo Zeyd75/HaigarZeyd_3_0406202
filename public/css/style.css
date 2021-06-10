@@ -36,68 +36,150 @@
   .localisation i, .localisation p {
     margin-top: 11px;
   }
-}
 
-/* MAIN
-   RESA */
-.reserver {
-  background-color: #f6f6f6;
-  height: 290px;
-  margin-top: -25px;
-  margin-right: 15px;
-  text-align: center;
-}
+  /* MAIN
+    RESA */
+  .reserver {
+    background-color: #f6f6f6;
+    height: 290px;
+    margin-top: -25px;
+    margin-right: 15px;
+    text-align: center;
+  }
 
-.reserver h2 {
-  padding-top: 35px;
-}
+  .reserver h2 {
+    padding-top: 35px;
+  }
 
-.reserver p {
-  margin-top: -7px;
-}
+  .reserver p {
+    margin-top: -7px;
+  }
 
-#explorer {
-  color: white;
-  margin-top: 37px;
-  width: 48%;
-  margin-left: 106px;
-  padding: 15px 0;
-  font-size: 15px;
-  border-radius: 25px;
-  box-sizing: 0 5px 5px #7575755e;
-  background: linear-gradient(#ff93e1, #a16be0);
-}
+  .decouvrir {
+    color: #7d7d7d;
+  }
 
-/* FONCTIONNEMENT */
-.fonctionnement {
-  margin-left: 30px;
-  margin-top: 42px;
-}
+  #explorer {
+    color: white;
+    margin-top: 37px;
+    width: 48%;
+    margin-left: 106px;
+    padding: 15px 0;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px #7575755e;
+    background: linear-gradient(#ff93e1, #a16be0);
+  }
 
-.etape {
-  display: flex;
-  background-color: #f6f6f6;
-  padding: 10px;
-  border-radius: 25px;
-  margin-bottom: 20px;
-}
+  /* FONCTIONNEMENT */
+  .fonctionnement {
+    margin-left: 30px;
+    margin-top: 45px;
+  }
 
-.numeroEtape {
-  color: white;
-  background-color: #9356DC;
-  border-radius: 50%;
-  width: 5px;
-  padding: 10px;
-  height: 5px;
-  display: inline-block;
-  position: absolute;
-  left: 15px;
-}
+  .blocEtapes {
+    margin-top: 28px;
+    width: 85%;
+    margin-left: 8px;
+  }
 
-.etape i {
-  color:#7e7e7e;
-}
+  .etape {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: 53px;
+    box-shadow: 0 5px 5px #7575755e;
+  }
 
-.decouvrir {
-  color: #7d7d7d;
+  .numeroEtape {
+    color: white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 5px;
+    padding: 4px 12px 15px 9px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    left: -8px;
+    font-size: 14px;
+  }
+
+  .etape i {
+    color:#7e7e7e;
+    margin-top: 19px;
+    margin-left: 27px;
+    font-size: 18px;
+  }
+
+  .etape p {
+    margin-left: 30px;
+    margin-top: 17px;
+  }
+
+  /*RESTAURANTS*/
+  .blocRestaurants {
+    background-color: #f6f6f6;
+    margin-top: 68px;
+    padding-top: 35px;
+    padding-left: 30px;
+  }
+
+  .blocRestaurants img {
+    height: 175px;
+    width: 328px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .nouveau {
+    font-size: 13px;
+    font-weight: bold;
+    color: #008766;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-bottom: -10px;
+    margin-left: 240px;
+    padding: 7px 12px;
+    border-radius: 3px;
+  }
+
+  .menus {
+    margin-top: 5px;
+  }
+
+  .menus a {
+    text-decoration: none;
+  }
+
+  .nomRestau {
+    color: black;
+    background-color: white;
+    height: 95px;
+    width: 328px;
+    display: flex;
+    margin-top: -22px;
+    margin-bottom: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 5px #7575755e;
+  }
+
+  .nomRestau i {
+    font-size: 25px;
+    margin-left: 115px;
+    margin-top: 40px;
+  }
+
+  .blocGauche {
+    padding-left: 15px;
+  }
+
+  .blocGauche h3 {
+    padding-top: 15px;
+  }
+
+  .blocGauche p {
+    margin-top: -15px;
+  }
+
 }
