@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    height: 55px;
+}
+
+header h1 {
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+header i {
+    padding-top: 20px;
+}
+
+h1, h4 {
+    font-family: "Shrikhand", sans-serif;
+  }
+
+  img {
+    width: 400px;
+    margin-left: -30px;
+  }
+
+  .paletteMenu {
+    background-color: #f6f6f6;
+    border-radius: 45px 45px 0 0;
+    width: 105%;
+    margin-left: -9px;
+    margin-top: -30px;
+    position: absolute;
+  }
