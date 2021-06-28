@@ -1,8 +1,5 @@
-
-  @media only screen and (max-width: 1280px) {}
-  @media only screen and (max-width: 600px) {}
-    /* HEADER */
-    body {
+     /* HEADER */
+     body {
       margin-top: -25px;
       width: 110%;
       margin-left: -5px;
@@ -37,6 +34,10 @@
     .localisation i, .localisation p {
       margin-top: 11px;
     }
+
+
+  @media only screen and (max-width: 1280px) {}
+  @media only screen and (max-width: 600px) {}
 
     /* MAIN
       RESA */
@@ -309,5 +310,41 @@
         opacity: 0;
       }
     }
+
+    /*Animation menu*/
+    .box_menu .clickHover {
+      position: relative;
+      color: white;
+      background-color: #99e2d0;
+      padding: 10px;
+      display: block;
+      padding: 30px 0px;
+      text-align: center;
+      width: 0%;
+      float: right;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: clip;
+      border-radius: 0px 20px 20px 0px;
+      opacity: 0;
+      animation: 0.5s ease-out clickhover;
+    }
+    
+    @keyframes clickhover {
+      0% {
+        width: 20%;
+        opacity: 1;
+      }
+    
+      50% {
+        opacity: 1;
+      }
+    
+      100% {
+        width: 0%;
+        opacity: 0;
+      }
+    }
+    
   
 
