@@ -1,5 +1,379 @@
-     /* HEADER */
-     body {
+  /* HEADER */
+  body {
+    margin-top: -25px;
+    width: 110%;
+    margin-left: -5px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h1 {
+    box-shadow: 0px 0px 7px #757575;
+    padding: 10px 0 10px 700px;
+  }
+
+  h1, h4 {
+    font-family: "Shrikhand", sans-serif;
+  }
+
+  .localisation {
+    display: flex;
+    background-color: #eaeaea;
+    height: 46px;
+    margin-top: -18px;
+    padding-left: 700px;
+  }
+
+  .localisation i {
+    margin-top: 16px;
+  }
+
+  .localisation p {
+    padding-left: 25px;
+  }
+
+  .localisation i, .localisation p {
+    margin-top: 11px;
+  }
+
+  /* MAIN
+    RESA */
+  .reserver {
+    background-color: #f6f6f6;
+    height: 290px;
+    margin-top: -25px;
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  .reserver h2 {
+    padding-top: 35px;
+  }
+
+  .reserver p {
+    margin-top: -7px;
+    margin-left: -90px;
+  }
+
+  .decouvrir {
+    color: #7d7d7d;
+  }
+
+  #explorer {
+    color: white;
+    margin-top: 37px;
+    width: 48%;
+    margin-left: 400px;
+    padding: 15px 0;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px #7575755e;
+    background: linear-gradient(#ff93e1, #a16be0);
+  }
+
+  /* FONCTIONNEMENT */
+  .fonctionnement {
+    margin-left: 30px;
+    margin-top: 45px;
+  }
+
+  .fonctionnement h2 {
+    margin-left: 680px;
+  }
+
+  h2 {
+    margin-left: -90px;
+  }
+
+  .blocEtapes {
+    margin-top: 28px;
+    width: 45%;
+    margin-left: 400px;
+  }
+
+  .etape {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    height: 53px;
+    box-shadow: 0 5px 5px #7575755e;
+  }
+
+  .numeroEtape {
+    color: white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 5px;
+    padding: 4px 12px 15px 9px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    left: 380px;
+    font-size: 14px;
+  }
+
+  .etape i {
+    color:#7e7e7e;
+    margin-top: 19px;
+    margin-left: 235px;
+    font-size: 18px;
+  }
+
+  .etape p {
+    margin-left: 30px;
+    margin-top: 17px;
+  }
+
+  /*RESTAURANTS*/
+  .blocRestaurants {
+    background-color: #f6f6f6;
+    margin-top: 68px;
+    padding-top: 35px;
+    padding-left: 30px;
+  }
+
+  .blocRestaurants h2 {
+    margin-left: 680px;
+  }
+
+  .blocRestaurants img {
+    height: 175px;
+    width: 328px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .menus {
+    margin-left: 325px;
+  }
+
+  .nouveau {
+    font-size: 13px;
+    font-weight: bold;
+    color: #008766;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-bottom: -10px;
+    margin-left: 240px;
+    padding: 7px 12px;
+    border-radius: 3px;
+  }
+
+  .nouveauxMenus {
+    display: flex;
+  }
+
+  .blocMenu {
+    margin-left: 65px;
+  }
+
+  .menus a {
+    text-decoration: none;
+  }
+
+  .nomRestau {
+    color: black;
+    background-color: white;
+    height: 80px;
+    width: 328px;
+    margin-top: -22px;
+    margin-bottom: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 5px #7575755e;
+  }
+  
+  .icon_heart {
+    display: none;
+  }
+
+  .icon_heart_active {
+    float: right;
+    padding-right: 20px;
+    margin-top: -30px;
+    font-size: 30px;
+    color: black;
+  }
+
+  .icon_heart_active :focus {
+    background: linear-gradient(#ff91e0, #9460d3);
+  }
+
+  .icon_heart_active {
+    float: right;
+    padding-right: 20px;
+    margin-top: -60px;
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .icon_heart_active :hover {
+    color: #9356dc;
+    background: linear-gradient(#9356dc, #ff79da);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: earth 0.2s linear;
+  } 
+
+  .blocGauche {
+    padding-left: 15px;
+  }
+
+  .blocGauche h3 {
+    padding-top: 15px;
+  }
+
+  .blocGauche p {
+    margin-top: -15px;
+  }
+
+  footer {
+    background-color: #353535;
+    margin-top: -21px;
+    height: 200px;
+    padding-left: 730px;
+  }
+  
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footerAction {
+    display: flex;
+    margin-top: -8px;
+  }
+
+  .footerAction i {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .footerAction p {
+    margin-top: 0;
+  }
+
+  h4 {
+    color: white;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .faP {
+    margin-left: 14px;
+  }
+
+  .faP2 {
+    margin-left: 10px;
+  }
+
+  .contact {
+    padding-top: -5px;
+  }
+
+  main {
+    animation: opacity 3s linear;
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+  
+    90% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+    
+  }
+
+  .loader {
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(#9356dc, #ff79da);
+    border-radius: 50%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    visibility: hidden;
+    animation: spin 2s linear;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes spin {
+    0% {
+      visibility: visible;
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+    }
+  
+    90% {
+      transform: translate(-50%, -50%) rotate(340deg);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  /*Animation menu*/
+  .box_menu .clickHover {
+    position: relative;
+    color: white;
+    background-color: #99e2d0;
+    padding: 10px;
+    display: block;
+    padding: 30px 0px;
+    text-align: center;
+    width: 0%;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-radius: 0px 20px 20px 0px;
+    opacity: 0;
+    animation: 0.5s ease-out clickhover;
+  }
+  
+  @keyframes clickhover {
+    0% {
+      width: 20%;
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      width: 0%;
+      opacity: 0;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    /* HEADER */
+    body {
       margin-top: -25px;
       width: 110%;
       margin-left: -5px;
@@ -8,7 +382,7 @@
     
     h1 {
       box-shadow: 0px 0px 7px #757575;
-      padding: 10px 0 10px 105px;
+      padding: 10px 0 10px 115px;
     }
 
     h1, h4 {
@@ -20,7 +394,7 @@
       background-color: #eaeaea;
       height: 46px;
       margin-top: -18px;
-      padding-left: 110px;
+      padding-left: 115px;
     }
 
     .localisation i {
@@ -35,10 +409,6 @@
       margin-top: 11px;
     }
 
-
-  @media only screen and (max-width: 1280px) {}
-  @media only screen and (max-width: 600px) {}
-
     /* MAIN
       RESA */
     .reserver {
@@ -51,10 +421,12 @@
 
     .reserver h2 {
       padding-top: 35px;
+      margin-left: 0;
     }
 
     .reserver p {
       margin-top: -7px;
+      margin-left: 0;
     }
 
     .decouvrir {
@@ -77,6 +449,10 @@
     .fonctionnement {
       margin-left: 30px;
       margin-top: 45px;
+    }
+
+    .fonctionnement h2 {
+      margin-left: 0;
     }
 
     .blocEtapes {
@@ -129,10 +505,18 @@
       height: 1200px;
     }
 
+    .blocRestaurants h2 {
+      margin-left: 0;
+    }
+
     .blocRestaurants img {
       height: 175px;
       width: 328px;
       border-radius: 15px 15px 0 0;
+    }
+
+    .nouveauxMenus {
+      display: block;
     }
 
     .nouveau {
@@ -149,6 +533,7 @@
 
     .menus {
       margin-top: 5px;
+      margin-left: -65px;
     }
 
     .menus a {
@@ -250,6 +635,14 @@
       padding-top: 20px;
     }
 
+    .faP {
+      margin-left: 14px;
+    }
+
+    .faP2 {
+      margin-left: 10px;
+    }
+
     .contact {
       padding-top: -5px;
     }
@@ -345,6 +738,4 @@
         opacity: 0;
       }
     }
-    
-  
-
+  }
