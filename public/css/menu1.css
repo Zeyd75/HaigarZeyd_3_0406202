@@ -2,27 +2,254 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+.logo {
     display: flex;
     height: 55px;
 }
 
 header h1 {
-    margin-left: 80px;
+    margin-left: 600px;
     margin-top: 5px;
+    font-size: 50px;
 }
 
 header i {
     padding-top: 20px;
 }
 
+main {
+  margin-top: 25px;
+}
+
 h1, h2, h4 {
     font-family: "Shrikhand", sans-serif;
   }
 
+img {
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  z-index: 0;
+  margin-left: 10px;
+}
+
+.nomRestau {
+  padding: 10px;
+  width: 500px;
+  margin-top: 25px;
+}
+
+.paletteMenu {
+  background-color: #f6f6f6;
+  border-radius: 70px 70px 0 0;
+  width: 97%;
+  margin-left: -16px;
+  margin-top: -20px;
+  padding: 15px 650px 20px 530px;
+}
+
+.titleHeart {
+  display: flex;
+  margin-top: -25px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+.platTitle {
+  position: relative;
+  margin-left: -29%;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+  border-bottom: solid 2px #99e2d0;
+  width: 11%;
+}
+
+.blocPlats {
+  margin-left: -1300px;
+}
+
+.plat {
+  background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 600px;
+    padding: 0px 0px 0px 5px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: fit-content;
+}
+
+h5 {
+  font-size: 17px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.description {
+  display: flex;
+  font-size: 15px;
+  margin-top: -40px;
+  margin-left: 10px;
+}
+
+.description p {
+  text-align: center;
+}
+
+.prix {
+  margin-left: 30px;
+  animation: 0.5s ease-in reverse both prix;
+}
+
+.commander {
+  color: white;
+  margin-top: 37px;
+  width: 48%;
+  margin-left: -150px;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px #7575755e;
+  background: linear-gradient(#ff93e1, #a16be0);
+}
+
+.checkAnimation {
+  position: relative;
+  color: white;
+  background-color: #99e2d0;
+  padding: 10px;
+  display: block;
+  padding: 30px 0px;
+  text-align: center;
+  width: 0%;
+  float: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  border-radius: 0px 20px 20px 0px;
+  opacity: 0;
+  animation: 0.5s ease-out checkout;
+}
+
+@keyframes checkout {
+  0% {
+    width: 20%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes prix {
+  0% {
+    margin-left: -50px;
+  }
+}
+
+footer {
+  background-color: #353535;
+  margin-top: -21px;
+  height: 200px;
+  padding-left: 90px;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerAction {
+  display: flex;
+  margin-top: -8px;
+}
+
+.footerAction i {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.footerAction p {
+  margin-top: 0;
+}
+
+h4 {
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.faP {
+  margin-left: 14px;
+}
+
+.faP2 {
+  margin-left: 10px;
+}
+
+.contact {
+  padding-top: -5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  header {
+      display: flex;
+      height: 30px;
+  }
+
+  header h1 {
+      margin-left: 80px;
+      margin-top: 5px;
+      font-size: 30px;
+  }
+
+  header i {
+      padding-top: 20px;
+  }
+
+  h1, h2, h4 {
+      font-family: "Shrikhand", sans-serif;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+
   img {
     width: 400px;
-    margin-left: -30px;
+    margin-left: -550px;
+    background-color: transparent;
   }
 
   .paletteMenu {
@@ -69,3 +296,4 @@ h1, h2, h4 {
     display: flex;
     font-size: 15px;
   }
+}
