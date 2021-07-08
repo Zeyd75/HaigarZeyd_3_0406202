@@ -26,13 +26,12 @@ h1, h2, h4 {
   }
 
 img {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: center;
   padding: 0;
   z-index: 0;
-  margin-left: 10px;
 }
 
 .nomRestau {
@@ -43,8 +42,6 @@ img {
 
 .paletteMenu {
   background-color: #f6f6f6;
-  border-radius: 70px 70px 0 0;
-  width: 97%;
   margin-left: -16px;
   margin-top: -20px;
   padding: 15px 650px 20px 530px;
@@ -57,7 +54,8 @@ img {
 
 h2 {
   font-size: 30px;
-  margin-left: 80px;
+  width: 200%;
+  padding-left: 75px;
 }
 
 .platTitle {
@@ -71,54 +69,53 @@ h3 {
   font-weight: lighter;
   border-bottom: solid 2px #99e2d0;
   width: 11%;
+  margin-left: -300px;
 }
 
 .blocPlats {
-  margin-left: -1300px;
+  margin-left: -480px;
+  padding-left: 80px;
 }
 
 .plat {
   background-color: white;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 1000px;
-    min-width: 600px;
-    padding: 0px 0px 0px 5px;
-    box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    height: fit-content;
+  border-radius: 15px;
+  width: 140%;
+  max-width: 1000px;
+  min-width: 600px;
+  padding: 0px 0px 0px 5px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
+  margin: 50px auto 20px auto;
+  height: fit-content;
 }
 
 h5 {
   font-size: 17px;
   padding-top: 20px;
-  padding-left: 10px;
 }
 
 .description {
-  display: flex;
   font-size: 15px;
   margin-top: -40px;
   margin-left: 10px;
 }
 
 .description p {
-  text-align: center;
+  margin-top: -20px;
 }
 
 .prix {
-  margin-left: 30px;
-  animation: 0.5s ease-in reverse both prix;
+  padding-left: 950px;
+  margin-top: -40px;
+  padding-bottom: 30px;
+  animation: 0.5s ease-in reverse both
 }
 
 .commander {
   color: white;
   margin-top: 37px;
   width: 48%;
-  margin-left: -150px;
+  margin-left: 150px;
   padding: 15px 0px;
   text-align: center;
   font-size: 15px;
@@ -167,11 +164,12 @@ h5 {
   }
 }
 
+
 footer {
   background-color: #353535;
   margin-top: -21px;
   height: 200px;
-  padding-left: 90px;
+  padding-left: 120px;
 }
 
 footer nav {
@@ -225,7 +223,7 @@ h4 {
 
   header {
       display: flex;
-      height: 30px;
+      height: 45px;
   }
 
   header h1 {
@@ -236,6 +234,7 @@ h4 {
 
   header i {
       padding-top: 20px;
+      margin-left: 10px;
   }
 
   h1, h2, h4 {
@@ -248,8 +247,8 @@ h4 {
 
   img {
     width: 400px;
-    margin-left: -550px;
-    background-color: transparent;
+    margin-left: -10px;
+    height: 250px;
   }
 
   .paletteMenu {
@@ -257,10 +256,9 @@ h4 {
     border-radius: 70px 70px 0 0;
     width: 97%;
     margin-left: -16px;
-    margin-top: -50px;
+    margin-top: -40px;
     position: absolute;
-    padding-left: 30px;
-    padding-top: 15px;
+    padding: 15px 0 0 30px;
   }
 
   .titleHeart {
@@ -268,7 +266,23 @@ h4 {
   }
 
   h2 {
+    font-size: 28px;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .icon_heart {
+    padding-top: 50px;
     font-size: 25px;
+    padding-right: 30px;
+  }
+
+  .platTitle, .blocPlats {
+    margin-left: 0;
+  }
+
+  .platTitle {
+    margin-top: -25px;
   }
 
   h3 {
@@ -288,8 +302,7 @@ h4 {
 
   h5 {
     font-size: 17px;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin-left: -20px;
   }
 
   .prix {
