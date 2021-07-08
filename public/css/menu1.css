@@ -26,11 +26,11 @@ h1, h2, h4 {
   }
 
 img {
-  width: 100%;
+  width: 1519px;
+  margin-left: -8px;
   height: 300px;
   object-fit: cover;
   object-position: center;
-  padding: 0;
   z-index: 0;
 }
 
@@ -41,9 +41,10 @@ img {
 }
 
 .paletteMenu {
+  width: 347px;
   background-color: #f6f6f6;
   margin-left: -16px;
-  margin-top: -20px;
+  margin-top: -5px;
   padding: 15px 650px 20px 530px;
 }
 
@@ -167,9 +168,11 @@ h5 {
 
 footer {
   background-color: #353535;
-  margin-top: -21px;
+  margin-top: -25px;
   height: 200px;
+  width: 1399px;
   padding-left: 120px;
+  margin-left: -8px;
 }
 
 footer nav {
@@ -254,11 +257,11 @@ h4 {
   .paletteMenu {
     background-color: #f6f6f6;
     border-radius: 70px 70px 0 0;
-    width: 97%;
-    margin-left: -16px;
-    margin-top: -40px;
-    position: absolute;
-    padding: 15px 0 0 30px;
+    width: 100%;
+    margin-top: -43px;
+    margin-left: -15px;
+    position: relative;
+    padding: 15px 0 40px 30px;
   }
 
   .titleHeart {
@@ -267,7 +270,7 @@ h4 {
 
   h2 {
     font-size: 28px;
-    margin-left: -10px;
+    margin-left: -80px;
     margin-top: 10px;
   }
 
@@ -277,12 +280,17 @@ h4 {
     padding-right: 30px;
   }
 
+  .menu {
+    margin-top: -15px;
+  }
+
   .platTitle, .blocPlats {
     margin-left: 0;
+    padding-left: 0;
   }
 
   .platTitle {
-    margin-top: -25px;
+    margin-top: 5px;
   }
 
   h3 {
@@ -291,22 +299,47 @@ h4 {
     font-weight: lighter;
     border-bottom: solid 2px #99e2d0;
     width: 11%;
+    margin-left: 0;
   }
 
   .plat {
     background-color: white;
-    width: 91%;
     height: 60px;
     border-radius: 15px;
+    max-width: none;
+    min-width: 0;
+    width: 90%;
+    margin-left: 0;
   }
 
   h5 {
     font-size: 17px;
-    margin-left: -20px;
+    padding-top: 10px;
+    margin-left: -5px;
+  }
+
+  .description p {
+    margin-left: -5px;
+    margin-top: -25px;
   }
 
   .prix {
     display: flex;
     font-size: 15px;
+    padding-left: 285px;
+    padding-top: 7px;
   }
+
+  .commander {
+    margin-left: 75px;
+    margin-top: 40px;
+  }
+
+  footer {
+    padding-left: 20px;
+    margin-top: -30px;
+    width: 110%;
+    margin-left: -10px;
+  }
+
 }
