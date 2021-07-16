@@ -13,6 +13,10 @@ header h1 {
     font-size: 50px;
 }
 
+header a {
+  color: black;
+}
+
 header i {
     padding-top: 20px;
 }
@@ -53,6 +57,33 @@ img {
   margin-top: -25px;
 }
 
+.icon_heart {
+  display: none;
+}
+
+.icon_heart_active :focus {
+  background: linear-gradient(#ff91e0, #9460d3);
+}
+
+.icon_heart_active {
+  float: right;
+  padding-right: 20px;
+  margin-top: 70px;
+  margin-right: -80px;
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icon_heart_active :hover {
+  color: #9356dc;
+  background: linear-gradient(#9356dc, #ff79da);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: earth 0.2s linear;
+}
+
 h2 {
   font-size: 30px;
   width: 200%;
@@ -84,10 +115,14 @@ h3 {
   width: 140%;
   max-width: 1000px;
   min-width: 600px;
-  padding: 0px 0px 0px 5px;
+  padding: 0px 0px 5px 5px;
   box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
   margin: 50px auto 20px auto;
   height: fit-content;
+}
+
+.plat:hover .prix{
+  animation: 1.5s ease-in reverse both prix;
 }
 
 h5 {
@@ -103,13 +138,18 @@ h5 {
 
 .description p {
   margin-top: -20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
 }
 
 .prix {
-  padding-left: 950px;
-  margin-top: -40px;
+  margin-top: -50px;
   padding-bottom: 30px;
-  animation: 0.5s ease-in reverse both
+  float: right;
+  margin-right: 15px;
+  font-weight: 600;
 }
 
 .commander {
@@ -129,19 +169,25 @@ h5 {
   position: relative;
   color: white;
   background-color: #99e2d0;
-  padding: 10px;
   display: block;
-  padding: 30px 0px;
+  padding: 35px 0px;
   text-align: center;
   width: 0%;
+  margin-top: -83px;
   float: right;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 15px 15px 0px;
   opacity: 0;
-  animation: 0.5s ease-out checkout;
+  animation: 1s ease-out checkout;
 }
+
+.plat:hover .checkAnimation {
+  opacity: 1;
+  animation: 0.5s ease-in reverse both check;
+}
+
 
 @keyframes checkout {
   0% {
@@ -163,8 +209,11 @@ h5 {
   0% {
     margin-left: -50px;
   }
-}
 
+  100% {
+    margin-left: 0;
+  }
+}
 
 footer {
   background-color: #353535;
@@ -280,6 +329,11 @@ h4 {
     padding-right: 30px;
   }
 
+  .icon_heart_active {
+    margin-right: 30px;
+    margin-top: 55px;
+  }
+
   .menu {
     margin-top: -15px;
   }
@@ -312,6 +366,30 @@ h4 {
     margin-left: 0;
   }
 
+  .checkAnimation {
+    position: relative;
+    color: white;
+    background-color: #99e2d0;
+    display: block;
+    padding: 24px 0px;
+    text-align: center;
+    width: 0%;
+    margin-top: -73px;
+    float: right;
+    margin-right: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0;
+    animation: 1s ease-out checkout;
+  }
+  
+  .plat:hover .checkAnimation {
+    opacity: 1;
+    animation: 0.5s ease-in reverse both check;
+  }
+
   h5 {
     font-size: 17px;
     padding-top: 10px;
@@ -321,6 +399,7 @@ h4 {
   .description p {
     margin-left: -5px;
     margin-top: -25px;
+    width: 80%;
   }
 
   .prix {
@@ -340,6 +419,32 @@ h4 {
     margin-top: -30px;
     width: 110%;
     margin-left: -10px;
+  }
+
+  @keyframes checkout {
+    0% {
+      width: 20%;
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      width: 0%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes prix {
+    0% {
+      margin-left: -50px;
+    }
+  
+    100% {
+      margin-left: 0;
+    }
   }
 
 }
