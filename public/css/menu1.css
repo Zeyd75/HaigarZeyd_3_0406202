@@ -118,6 +118,9 @@ h3 {
   padding: 0px 0px 5px 5px;
   box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
   margin: 50px auto 20px auto;
+  position: relative;
+  animation: 1.5s ease-in 0s reverse both slidein;
+  z-index: 100;
 }
 
 h5 {
@@ -147,10 +150,6 @@ h5 {
   font-weight: 600;
 }
 
-.prix:hover {
-  margin-right: 50px;
-}
-
 .commander {
   color: white;
   margin-top: 37px;
@@ -164,7 +163,7 @@ h5 {
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
-.checkAnimation {
+.plat .checkAnimation {
   position: relative;
   color: white;
   background-color: #99e2d0;
@@ -182,23 +181,54 @@ h5 {
   animation: 1s ease-out checkout;
 }
 
+.plat .checkAnimation i {
+  animation: 1s alternate rotate;
+}
+
+
 .plat:hover .checkAnimation {
   opacity: 1;
-  animation: 0.5s ease-in reverse both check;
+  animation: 1s ease-in check;
+}
+
+.plat:hover .prix p {
+  animation: 0.5s ease-in reverse both prix;
+}
+
+
+@keyframes slidein {
+  0% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
 @keyframes checkout {
-  0% {
+  from {
     width: 0;
     opacity: 0;
   }
 
-  50% {
-    opacity: 1;
-  }
-
-  100% {
+  to {
     width: 20%;
     opacity: 1;
   }
@@ -206,11 +236,11 @@ h5 {
 
 @keyframes prix {
   0% {
-    margin-left: -50px;
+    margin-left: -30px;
   }
 
   100% {
-    margin-left: 0;
+    margin-left: 0px;
   }
 }
 

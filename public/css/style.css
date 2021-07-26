@@ -303,7 +303,7 @@
     width: 120px;
     height: 120px;
     visibility: hidden;
-    animation: spin 2s linear;
+    animation: spin 1s linear;
     box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
     10px 10px 10px rgba(0, 0, 0, 0.4),
     inset -5px -5px 5px rgba(255, 255, 255, 0.2),
@@ -662,7 +662,8 @@
     .loader {
       position: fixed;
       z-index: 999;
-      background: linear-gradient(#9356dc, #ff79da);
+      border-top: 16px solid #af669a;
+      border-bottom: 16px solid #9356dc;
       border-radius: 50%;
       margin: 0;
       top: 50%;
@@ -672,7 +673,7 @@
       width: 120px;
       height: 120px;
       visibility: hidden;
-      animation: spin 2s linear;
+      animation: spin 1s linear;
       box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
       10px 10px 10px rgba(0, 0, 0, 0.4),
       inset -5px -5px 5px rgba(255, 255, 255, 0.2),
