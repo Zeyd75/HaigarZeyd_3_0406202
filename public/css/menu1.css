@@ -38,7 +38,7 @@ img {
   margin-left: -16px;
   margin-right: -8px;
   margin-top: -5px;
-  padding: 15px 650px 20px 530px;
+  padding: 15px 650px 140px 530px;
 }
 
 .titleHeart {
@@ -159,9 +159,10 @@ h5 {
 
 .commander {
   color: white;
+  position: absolute;
   margin-top: 37px;
   margin-left: 150px;
-  padding: 15px 0px;
+  padding: 15px 100px;
   text-align: center;
   font-size: 15px;
   border-radius: 25px;
@@ -265,13 +266,6 @@ h4 {
   }
 }
 
-/*VERSION DESKTOP
-@media only screen and (max-width: 1280px) {
-  .icon_heart_active  {
-    margin-left: 200px;
-  }
-}*/
-
 /*VERSION TABLETTE*/
 @media only screen and (max-width: 1024px) {
   header a {
@@ -342,72 +336,65 @@ h4 {
 @media only screen and (max-width: 600px) {
   body {
     font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
-    position: relative;
     padding: 0px 18px 0px 18px;
     margin: 0px;
   }
-
-  header {
-      display: flex;
-      height: 45px;
+  
+  .logo {
+    padding-top: 5px;
   }
 
-  /*.logo {
-    margin-left: 55px;
-  }*/
+  header i {
+    font-size: 20px;
+    padding-top: 12px;
+    margin-left: 0;
+}
 
   header h1 {
-      margin-left: 50px;
-      margin-top: 5px;
-      font-size: 25px;
+      margin-left: 70px;
+      font-size: 30px;
   }
-
-  header a {
-    margin-left: 0;
-    padding-top: 0;
-}
 
   h1, h2, h4 {
       font-family: "Shrikhand", sans-serif;
   }
 
+  main {
+    margin-top: -10px;
+  }
+
   img {
-    width: 285px;
+    width: 377px;
     margin-left: -20px;
-    height: 215px;
+    height: 270px;
   }
 
   .paletteMenu {
-    background-color: #f6f6f6;
     border-radius: 50px 50px 0 0;
     margin-top: -65px;
     position: relative;
-    padding: 15px 0 100px 285px;
+    padding: 15px 0 100px 375px;
     margin-left: -18px;
   }
 
   .titleHeart {
-    display: flex;
+    margin-top: -12px;
+    padding-left: 300px;
+  }
+
+  .nomRestau {
+    padding-left: 70px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 27px;
     margin-top: 0;
-    margin-left: -200px;
-    padding-right: 150px;
-  }
-
-  .icon_heart {
-    padding-top: 50px;
-    font-size: 25px;
-    padding-right: 30px;
   }
 
   .icon_heart_active {
-    font-size: 15px;
-    margin-left: -140px;
-    margin-top: 40px;
+    font-size: 25px;
+    margin-top: 38px;
+    padding-right: 50px;
   }
 
   .menu {
@@ -415,45 +402,46 @@ h4 {
   }
 
   .platTitle {
-    margin-top: 5px;
     margin-left: -265px;
   }
 
   h3 {
-    margin-left: 0;
-    font-size: 13px;
+    margin-left: -90px;
+    font-size: 16px;
     color: #747372;
-    width: 35px;
+  }
+
+  .blocPlats {
+    margin-left: -180px;
   }
 
   .plat {
-    background-color: white;
-    border-radius: 15px;
-    max-width: none;
     min-width: 0;
-    width: auto;
     margin-right: 20px;
-    margin-left: -190px;
+    margin-left: -180px;
     padding-bottom: 1px;
   }
 
   h5 {
-    font-size: 13px;
+    font-size: 17px;
     padding-top: 10px;
     margin-left: -5px;
   }
 
   .description p {
     margin-left: -5px;
-    font-size: 10px;
-    padding-top: 2px;
+    font-size: 14px;
+    margin-top: -25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .prix {
     display: flex;
-    font-size: 12px;
-    padding-left: 285px;
-    padding-top: 24px;
+    font-size: 14px;
+    padding-top: 18px;
+    transition: 0.8s ease-out;
   }
 
   .plat:hover .prix {
@@ -465,24 +453,22 @@ h4 {
   }
 
   .plat .checkAnimation {
-    padding: 17px 0;
-    margin-top: -70px;
+    padding: 24px 0;
+    margin-top: -65px;
   }
 
   .commander {
-    font-size: 12px;
-    margin-left: -220px;
+    margin-left: -275px;
     margin-top: 15px;
-    padding: 12px 10px;
+    padding: 15px 50px;
   }
 
   footer {
     margin-top: -30px;
     margin-left: -20px;
-    margin-right: 73px;
+    margin-right: -18px;
     padding-left: 30px;
-    padding-bottom: 25px;
-    font-size: 12px;
+    padding-bottom: 40px;
   }
 
   footer nav {
