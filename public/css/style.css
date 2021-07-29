@@ -266,10 +266,6 @@
     margin-left: 10px;
   }
 
-  .contact {
-    padding-top: -5px;
-  }
-
   main {
     animation: opacity 3s linear;
   }
@@ -634,10 +630,6 @@
 
     .faP2 {
       margin-left: 10px;
-    }
-
-    .contact {
-      padding-top: -5px;
     }
 
     main {

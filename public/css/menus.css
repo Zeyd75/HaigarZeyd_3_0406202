@@ -149,7 +149,6 @@ h5 {
 .plat:hover .checkAnimation {
   opacity: 1;
   animation: 0.8s ease-out checkout;
-  animation-delay: 0;
   animation-fill-mode: forwards;
 }
 
@@ -211,10 +210,6 @@ h4 {
 
 .faP2 {
   margin-left: 10px;
-}
-
-.contact {
-  padding-top: -5px;
 }
 
 /*KEYFRAMES*/
