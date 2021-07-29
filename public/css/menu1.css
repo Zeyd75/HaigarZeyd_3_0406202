@@ -7,7 +7,7 @@ body {
 }
 
 header h1 {
-    margin-left: 600px;
+    margin-left: 575px;
     margin-top: 5px;
     font-size: 50px;
 }
@@ -17,7 +17,9 @@ header a {
 }
 
 header i {
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-left: 30px;
+    font-size: 25px;
 }
 
 h1, h2, h4 {
@@ -29,13 +31,6 @@ img {
   margin-left: -8px;
   height: 300px;
   object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
-
-.nomRestau {
-  padding: 10px;
-  margin-top: 25px;
 }
 
 .paletteMenu {
@@ -49,6 +44,12 @@ img {
 .titleHeart {
   display: flex;
   margin-top: -25px;
+  margin-left: -230px;
+}
+
+.nomRestau {
+  padding: 10px;
+  margin-top: 25px;
 }
 
 .icon_heart {
@@ -61,9 +62,8 @@ img {
 
 .icon_heart_active {
   float: right;
-  padding-right: 20px;
   margin-top: 70px;
-  margin-left: 175px;
+  margin-left: 15px;
   font-size: 20px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -80,12 +80,7 @@ img {
 
 h2 {
   font-size: 30px;
-  width: 200%;
-  padding-left: 75px;
-}
-
-.platTitle {
-  position: relative;
+  margin-left: -175px
 }
 
 h3 {
@@ -104,15 +99,16 @@ h3 {
 .plat {
   background-color: white;
   border-radius: 15px;
-  width: 140%;
-  max-width: 1000px;
   min-width: 600px;
-  padding: 0px 0px 5px 5px;
+  padding: 0px 300px 5px 5px;
   box-shadow: 3px 3px 10px rgb(0 0 0 / 19%);
   margin: 50px auto 20px auto;
-  position: relative;
   animation: 1.5s ease-in 0s reverse both slidein;
-  z-index: 100;
+}
+
+.description {
+  margin-top: -40px;
+  margin-left: 10px;
 }
 
 h5 {
@@ -120,33 +116,50 @@ h5 {
   padding-top: 20px;
 }
 
-.description {
-  font-size: 15px;
-  margin-top: -40px;
-  margin-left: 10px;
-}
-
 .description p {
+  font-size: 15px;
   margin-top: -20px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   transition: transform 0.8s ease-out;
 }
 
 .prix {
   margin-top: -50px;
-  padding-bottom: 30px;
   float: right;
-  margin-right: 15px;
+  margin-right: -270px;
   font-weight: 600;
   transition: transform 0.8s ease-out;
+}
+
+.plat:hover .prix {
+  transform: translateX(-100px);
+}
+
+.plat .checkAnimation {
+  color: white;
+  background-color: #99e2d0;
+  padding: 34px 0px;
+  text-align: center;
+  margin-top: -82px;
+  margin-right: -300px;
+  float: right;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+
+.plat:hover .checkAnimation {
+  opacity: 1;
+  animation: 0.8s ease-out checkout;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+.plat:hover .checkAnimation i {
+  animation: 0.8s rotate;
 }
 
 .commander {
   color: white;
   margin-top: 37px;
-  width: 48%;
   margin-left: 150px;
   padding: 15px 0px;
   text-align: center;
@@ -156,40 +169,54 @@ h5 {
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
-.plat .checkAnimation {
-  position: relative;
+footer {
+  background-color: #353535;
+  padding-left: 120px;
+  margin: -25px -8px;
+}
+
+footer nav {
+  padding-top: 3px;
+}
+
+footer a {
   color: white;
-  background-color: #99e2d0;
-  display: block;
-  padding: 35px 0px;
-  text-align: center;
-  width: 0%;
-  margin-top: -83px;
-  float: right;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: clip;
-  border-radius: 0px 15px 15px 0px;
-  opacity: 0;
+  text-decoration: none;
 }
 
-.plat:hover .checkAnimation i {
-  animation: 0.8s rotate;
+.footerAction {
+  display: flex;
+  margin-top: -8px;
 }
 
-
-.plat:hover .checkAnimation {
-  opacity: 1;
-  animation: 0.8s ease-out checkout;
-  animation-delay: 0;
-  animation-fill-mode: forwards;
+.footerAction i {
+  font-size: 12px;
+  margin-top: 2px;
 }
 
-.plat:hover .prix {
-  transform: translateX(-200px);
+.footerAction p {
+  margin-top: 0;
 }
 
+h4 {
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+}
 
+.faP {
+  margin-left: 14px;
+}
+
+.faP2 {
+  margin-left: 10px;
+}
+
+.contact {
+  padding-top: -5px;
+}
+
+/*KEYFRAMES*/
 @keyframes slidein {
   0% {
     transform: translatey(0px);
@@ -238,55 +265,6 @@ h5 {
   }
 }
 
-footer {
-  background-color: #353535;
-  padding-left: 120px;
-  margin: -25px -8px;
-}
-
-footer nav {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3px;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footerAction {
-  display: flex;
-  margin-top: -8px;
-}
-
-.footerAction i {
-  font-size: 12px;
-  margin-top: 2px;
-}
-
-.footerAction p {
-  margin-top: 0;
-}
-
-h4 {
-  color: white;
-  font-size: 18px;
-  padding-top: 20px;
-}
-
-.faP {
-  margin-left: 14px;
-}
-
-.faP2 {
-  margin-left: 10px;
-}
-
-.contact {
-  padding-top: -5px;
-}
-
 /*VERSION DESKTOP
 @media only screen and (max-width: 1280px) {
   .icon_heart_active  {
@@ -296,17 +274,13 @@ h4 {
 
 /*VERSION TABLETTE*/
 @media only screen and (max-width: 1024px) {
-  body {
-    margin-right: 100px;
-  }
-  
   header a {
-    margin-left: 60px;
-    padding-top: 20px;
+    margin-left: 0;
+    padding-top: 10px;
   }
 
   header h1 {
-    margin-left: 205px;
+    margin-left: 190px;
     margin-top: 10px;
   }
 
@@ -314,17 +288,17 @@ h4 {
     width: 768px;
   }
 
-  .titleHeart {
-    margin-left: -150px;
+  .paletteMenu {
+    padding: 15px 0px 140px 776px;
+    /*margin-right: 100px;*/
   }
 
-  .paletteMenu {
-    padding: 15px 626px 140px 150px;
-    margin-right: 100px;
+  .titleHeart {
+    margin-left: -550px;
   }
 
   .platTitle {
-    margin-left: 320px;
+    margin-left: -320px;
   }
 
   h3 {
@@ -332,25 +306,34 @@ h4 {
   }
 
   .blocPlats {
-    margin-left: -80px;
+    margin-left: -720px;
   }
 
   .plat {
-    width: 70%;
+    padding: 0px 0px 5px 5px;
+    margin: 50px 45px 20px auto;
+  }
+
+  .prix {
+    margin-right: 20px;
   }
 
   .plat:hover .prix {
     transform: translateX(-125px);
   }
 
+  .plat .checkAnimation {
+    margin-right: 0;
+  }
+
   .commander {
-    margin-left: 55px;
+    margin-left: -465px;
+    padding: 15px 40px;
     position: absolute;
   }
 
   footer {
     padding-left: 75px;
-    margin-right: -100px;
     padding-bottom: 375px;
   }
 }
