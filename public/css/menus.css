@@ -64,7 +64,7 @@ img {
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation: earth 0.2s linear;
+  animation: 1s ease-out heart;
 }
 
 h2 {
@@ -236,6 +236,20 @@ footer a {
   }
 }
 
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes prix {
   0% {
     margin-left: -30px;
@@ -266,6 +280,7 @@ footer a {
 
   header h1 {
       font-size: 30px;
+      padding-top: 5px;
   }
 
   h1, h2, h4 {
