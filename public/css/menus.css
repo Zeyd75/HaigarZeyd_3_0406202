@@ -169,6 +169,11 @@ h5 {
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
+.commander:hover {
+  background: linear-gradient(#f8a3e0, #c395f3);
+  box-shadow:0 7px 7px #3d3d3d5e;
+}
+
 footer {
   background-color: #353535;
   padding-left: 120px;
