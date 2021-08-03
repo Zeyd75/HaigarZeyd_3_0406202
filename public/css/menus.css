@@ -1,6 +1,6 @@
-.container {
+body {
   font-family: "Roboto", sans-serif;
-  margin: -8px;
+  margin: 0;
 }
 
 header h1 {
